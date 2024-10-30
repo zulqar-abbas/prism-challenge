@@ -1,0 +1,139 @@
+.outer-container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background-color: #4a5a80;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+
+.inner-container {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4a5a80;
+  border: 5px solid #27324b;
+  border-radius: 6px;
+}
+
+.input-field {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  color: white;
+  border: 1px solid transparent;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+  background: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.input-field.focused {
+  border: 2px solid skyblue;
+  background-color: #28334d;
+  outline: none;
+}
+
+.input-field.error {
+  border: 2px solid red !important;
+  background-color: #28334d;
+  outline: none;
+}
+
+.input-field.edited {
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-radius: 0px;
+  border-bottom: 2px dashed #d0a767;
+}
+
+/* Outer container input placements */
+.outer-container .margin-top {
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.outer-container .margin-left {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.outer-container .margin-right {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.outer-container .margin-bottom {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Inner container input placements */
+.inner-container .padding-top {
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner-container .padding-left {
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inner-container .padding-right {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inner-container .padding-bottom {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.save-button {
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin-top: 20px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+}
+
+.save-button:hover {
+  background-color: #45a049; 
+}
+
+.save-button:focus {
+  outline: none; 
+  box-shadow: 0 0 5px #45a049; 
+}
+
+.save-button:disabled {
+  background-color: #ccc; 
+  cursor: not-allowed; 
+}
