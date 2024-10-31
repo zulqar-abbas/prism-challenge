@@ -1,6 +1,6 @@
 %raw(`require("./PropertiesPanel.css")`)
 
-module MarginAndPaddingSection = Prism.MarginAndPaddingSection
+module Prism = MarginAndPadding.Prism
 
 module Collapsible = {
   @react.component
@@ -62,8 +62,7 @@ let make = () =>
   <aside className="PropertiesPanel">
     <Collapsible title="Load examples"> <ViewExamples /> </Collapsible>
     <Collapsible title="Margins & Padding">
-      <MarginAndPaddingSection/>
-      // <ControlPaddingAndMargin />
+      <Prism/>
     </Collapsible>
     <Collapsible title="Size"> <span> {React.string("example")} </span> </Collapsible>
   </aside>

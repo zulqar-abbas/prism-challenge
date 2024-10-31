@@ -1,6 +1,6 @@
-%raw(`require("./Prism.css")`)
+%raw(`require("./MarginAndPadding.css")`)
 
-module MarginAndPaddingSection = {
+module Prism = {
   type state = {
     value: string, 
     isEdited: bool,
